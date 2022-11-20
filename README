@@ -1,0 +1,9 @@
+
+Command to build app in alias mode:
+    python setup.py py2app -A
+  
+Command to build app in build mode:
+  python setup.py py2app
+
+Command run python app
+  python app/app.py
