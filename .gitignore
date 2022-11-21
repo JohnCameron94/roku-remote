@@ -1,4 +1,5 @@
 dist
 build
-RokuRemot.egg-info
+RokuRemote.egg-info
 roku_remote_env
+git-token
