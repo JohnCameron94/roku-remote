@@ -8,6 +8,7 @@ from controller.remote_keys import(
     ArrowKeys,
     ActionKeys
 )
+from controller.remote_mic_controller import RemoteMicrophoneController
 from errors.roku_device_not_found import RokuDeviceNotFound
 
 class RemoteController(object):
@@ -219,5 +220,10 @@ class RemoteController(object):
             f'{ self._url }/{ key_map[KeyGroups.ACTIONS.value][ActionKeys.CHANNEL_DOWN.value]}'
         )
         return response
+
+    def mic(self) -> None:
+        # Run Mic Controller
+        mic_controller = RemoteMicrophoneController()
+        mic_controller.run(self)
 
 

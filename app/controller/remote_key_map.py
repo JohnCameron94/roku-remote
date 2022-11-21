@@ -22,6 +22,6 @@ key_map = {
         'v-': 'keypress/volumedown',
         'mute': 'keypress/volumemute',
         'channelup':'keypress/channelup',
-        'channeldown': 'keypress/channeldown'
+        'channeldown': 'keypress/channeldown',
     }
 }
